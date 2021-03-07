@@ -11,7 +11,7 @@ export default {
     return axios.get("/api/books");
   },
   //Get a book with specific ID from DB
-  getBook: function () {
+  getBook: function (id) {
     return axios.get(`/api/books/${id}`);
   },
   //Save book to DB

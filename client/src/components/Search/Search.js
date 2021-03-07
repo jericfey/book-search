@@ -5,7 +5,13 @@ const Search = (props) => {
   return (
     <div className="search-area">
       <form onSubmit={props.searchBook} action="">
-        <input onChange={props.handleSearch} type="text" placeholder="Topic or Book Name Here"></input>
+        <input
+          onChange={props.handleSearch}
+          type="text"
+          placeholder="Topic or Book Name Here"
+          style={{ width: "300px" }}
+          value={props.searchBook}
+        ></input>
         <button type="submit">Search</button>
       </form>
     </div>

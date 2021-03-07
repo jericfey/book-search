@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Books from "./components/Books/Books";
-import SavedBooks from "./pages/SavedBooks";
-import SearchBooks from "./pages/SearchBooks";
+import savedBooks from "./pages/savedBooks";
+import searchBooks from "./pages/searchBooks";
 import notFound from "./pages/notFound";
 import "./App.css";
 
@@ -13,9 +13,9 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={SearchBooks} />
-          <Route exact path="/saved" component={SavedBooks} />
-          <Route exact path="/saved/:id" component={SavedBooks} />
+          <Route exact path="/" component={searchBooks} />
+          <Route exact path="/saved" component={savedBooks} />
+          <Route exact path="/saved/:id" component={savedBooks} />
           <Route component={notFound} />
         </Switch>
         <Books />

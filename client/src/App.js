@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Books from "./components/Books/Books";
 import savedBooks from "./pages/savedBooks";
-import searchBooks from "./pages/searchBooks";
+import searchBooks from "./pages/SearchBooks";
 import notFound from "./pages/notFound";
 import "./App.css";
 

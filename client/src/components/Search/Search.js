@@ -10,7 +10,7 @@ const Search = (props) => {
           type="text"
           placeholder="Topic or Book Name Here"
           style={{ width: "300px" }}
-          value={props.searchBook}
+          
         ></input>
         <button type="submit">Search</button>
       </form>

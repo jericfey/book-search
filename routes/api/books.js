@@ -1,5 +1,7 @@
 const router = require("express").Router();
-import booksController from "../../controller/bookController";
+const booksController = require("../../controller/bookController");
+
+
 
 // Matches with "/api/books"
 router
